@@ -1,190 +1,126 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Personal Website of Daniel Shafer">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Daniel Shafer: software engineer, investor, and Bitcoin believer.">
+    <meta name="theme-color" content="#0b0b0f">
+    <title>Daniel Shafer</title>
 
-        <title>Daniel Shafer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/site.css">
+</head>
 
-        <link rel="stylesheet"
-            href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-        <link rel="stylesheet"
-            href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
-        <link rel="stylesheet"
-            href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-        <link rel="stylesheet" href="css/layouts/marketing.css">
+<body>
+    <div class="glow"></div>
 
-    </head>
+    <header class="nav">
+        <div class="wrap">
+            <a class="logo" href="/">Daniel<span>.</span></a>
+            <ul>
+                <li><a class="link" href="#work">Work</a></li>
+                <li><a class="link" href="#about">About</a></li>
+                <li><a class="link" href="/chiron">Chiron</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <body>
-        <div class="splash-container">
-            <div class="splash">
-                <h1 class="splash-head">Daniel Shafer</h1>
-                <p class="splash-subhead">
-                    Engineer, investor, and YouTube creator. Always in Beta.
-                </p>
-                <p>
-                    <a style="margin:.2em;" href="http://github.com/dannyshafer"
-                        class="pure-button pure-button-primary">Github</a>
-                    <a style="margin:.2em;"
-                        href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ"
-                        class="pure-button pure-button-primary">Youtube</a>
-                    <a style="margin:.2em;"
-                        href="http://linkedin.com/in/danashafer"
-                        class="pure-button pure-button-primary">LinkedIn</a>
-                </p>
+    <main>
+        <div class="wrap hero">
+            <span class="badge"><i></i> Always in beta</span>
+            <h1>Engineer, investor,<br>and <em>maker</em> of things.</h1>
+            <p class="lede">
+                I'm <strong>Daniel Shafer</strong>. I build software, make coding lessons on YouTube,
+                and put capital to work. I care about making the world a better place through the
+                programs I build and through Bitcoin.
+            </p>
+            <div class="cta">
+                <a class="btn primary" href="http://linkedin.com/in/danashafer">Get in touch</a>
+                <a class="btn" href="http://github.com/dannyshafer">GitHub</a>
+                <a class="btn" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">YouTube</a>
             </div>
         </div>
 
-        <div class="content-wrapper">
-            <div class="content">
-                <h2 class="content-head is-center">Daniel Shafer is an investor
-                    and engineer, with experience in business intelligence.</h2>
-
-                <div class="pure-g">
-                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-
-                        <h3 class="content-subhead">
-                            <a
-                                href="https://github.com/dannyshafer/Chrysalis-App2.0">
-                                <img class="pure-img"
-                                    src="img/common/chrysalis.png" />
-                            </a>
-                            Chrysalis
-                        </h3>
-                        <p>
-                            Built with Ruby on Rails and React JS, Chrysalis
-                            makes it easy for people to get started with stocks
-                            by automating the math
-                            associated with investment analysis.
-                        </p>
-                    </div>
-                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                        <h3 class="content-subhead">
-                            <a href="http://shift.org">
-                                <img class="pure-img"
-                                    src="img/common/shift.png" />
-                            </a>
-                            Shift.org
-                        </h3>
-                        <p>
-                            Shift.org helps veterans and companies connect with
-                            each other to create meaningful post-military
-                            careers.
-                        </p>
-                    </div>
-                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                        <h3 class="content-subhead">
-                            <a href="http://stevensonloftssf.com">
-                                <img class="pure-img"
-                                    src="img/common/stevenson.png" />
-                            </a>
-                            Stevenson Lofts
-                        </h3>
-                        <p>
-                            Corporate website for Stevenson Lofts in San
-                            Francisco.
-                        </p>
-                    </div>
-                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                        <h3 class="content-subhead">
-                            <a href="http://sovereignscapital.com">
-                                <img class="pure-img"
-                                    src="img/common/sovereigns.png" />
-                            </a>
-                            Sovereign's Capital
-                        </h3>
-                        <p>
-                            Sovereign's Capital is a Durham, NC private equity
-                            firm.
-                        </p>
-                    </div>
-                </div>
+        <div class="marquee" aria-hidden="true">
+            <div class="track">
+                <span>React</span><span>Redux</span><span>JavaScript</span><span>Ruby</span><span>Rails</span><span>Python</span><span>Bitcoin</span>
+                <span>React</span><span>Redux</span><span>JavaScript</span><span>Ruby</span><span>Rails</span><span>Python</span><span>Bitcoin</span>
             </div>
-
-            <div class="content ribbon">
-                <div class="pure-g">
-                    <div class="l-box pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6">
-                        <img class="pure-img" src="img/common/react.png" />
-                    </div>
-                    <div class="l-box pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6">
-                        <img class="pure-img" src="img/common/redux.png" />
-                    </div>
-                    <div class="l-box pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6">
-                        <img class="pure-img" src="img/common/javascript.png" />
-                    </div>
-                    <div class="l-box pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6">
-                        <img class="pure-img" src="img/common/ruby.png" />
-                    </div>
-                    <div class="l-box pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6">
-                        <img class="pure-img" style="padding-top:60px"
-                            src="img/common/rails.svg" />
-                    </div>
-                    <div class="l-box pure-u-1-2 pure-u-md-1-3 pure-u-lg-1-6">
-                        <img class="pure-img" src="img/common/python.png" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="pure-g">
-                    <div class="l-box pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <h2 class="content-head is-center">Want To Connect?</h2>
-                    </div>
-                    <div class="l-box pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
-                        <p>
-                            My name is Daniel and I'm a software engineer and
-                            I'm passionate about making the world a better place
-                            through the programs I build and through Bitcoin.
-                            <br>
-                            <br> I also create and post coding lessons on
-                            front-end and back-end topics to the
-                            <a style="text-decoration:none;"
-                                href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">
-                                <strong>Arachne Tutorials</strong>
-                            </a> YouTube channel and invest with
-                            <a style="text-decoration:none;" href="/chiron">
-                                <strong>Chiron Capital</strong>.
-                            </a>
-                            <br>
-                            <br> Ever since moving to the San Francisco Bay
-                            Area, I've been captivated by the way engineers and
-                            entrepreneurs
-                            use technology to solve the world's challenges and
-                            improve peoples' lives. I love working on teams,
-                            parsing problems, and learning. Be in touch through
-                            <a style="text-decoration:none;"
-                                href="http://linkedin.com/in/danashafer">
-                                <strong>LinkedIn</strong>.
-                            </a>
-                        </p>
-                    </div>
-                    <div class="l-box pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
-                        <img class="pure-img is-center"
-                            style="margin-top:2.2em;margin-left:2.2em;border-radius: 50%;"
-                            src="img/common/daniel.png" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer l-box is-center">
-                <p
-                    style="font-size: .9em; margin-top: 0; margin-bottom: 0;">Copyright
-                    Daniel Shafer <span id="year">2026</span></p>
-            </div>
-
         </div>
 
-        <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
+        <section id="work">
+            <div class="wrap">
+                <p class="eyebrow reveal">Selected work</p>
+                <h2 class="title reveal">Things I've built along the way.</h2>
+                <div class="grid">
+                    <a class="card reveal" href="https://github.com/dannyshafer/Chrysalis-App2.0">
+                        <div class="thumb"><img src="img/common/chrysalis.png" alt="Chrysalis"></div>
+                        <h3>Chrysalis <span class="arrow">&#8599;</span></h3>
+                        <p>Built with Ruby on Rails and React JS. Makes it easy to get started with stocks by automating the math behind investment analysis.</p>
+                    </a>
+                    <a class="card reveal" href="http://shift.org">
+                        <div class="thumb"><img src="img/common/shift.png" alt="Shift.org"></div>
+                        <h3>Shift.org <span class="arrow">&#8599;</span></h3>
+                        <p>Connects veterans and companies to create meaningful post-military careers.</p>
+                    </a>
+                    <a class="card reveal" href="http://stevensonloftssf.com">
+                        <div class="thumb"><img src="img/common/stevenson.png" alt="Stevenson Lofts"></div>
+                        <h3>Stevenson Lofts <span class="arrow">&#8599;</span></h3>
+                        <p>Corporate website for Stevenson Lofts in San Francisco.</p>
+                    </a>
+                    <a class="card reveal" href="http://sovereignscapital.com">
+                        <div class="thumb"><img src="img/common/sovereigns.png" alt="Sovereign's Capital"></div>
+                        <h3>Sovereign's Capital <span class="arrow">&#8599;</span></h3>
+                        <p>Website for a Durham, NC private equity firm.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <section id="about">
+            <div class="wrap about">
+                <div>
+                    <p class="eyebrow reveal">About</p>
+                    <h2 class="title reveal">Let's connect.</h2>
+                    <p class="reveal">
+                        My name is Daniel and I'm a software engineer and I'm passionate about making the
+                        world a better place through the programs I build and through Bitcoin.
+                    </p>
+                    <p class="reveal">
+                        I also create and post coding lessons on front-end and back-end topics to the
+                        <a href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">Arachne Tutorials</a>
+                        YouTube channel and invest with <a href="/chiron">Chiron Capital</a>.
+                    </p>
+                    <p class="reveal">
+                        Ever since moving to the San Francisco Bay Area, I've been captivated by the way
+                        engineers and entrepreneurs use technology to solve the world's challenges and
+                        improve peoples' lives. I love working on teams, parsing problems, and learning.
+                        Be in touch through <a href="http://linkedin.com/in/danashafer">LinkedIn</a>.
+                    </p>
+                </div>
+                <div class="portrait reveal">
+                    <img src="img/common/daniel.png" alt="Daniel Shafer">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>Copyright Daniel Shafer <span id="year">2026</span></span>
+            <span class="links">
+                <a href="http://github.com/dannyshafer">GitHub</a>
+                <a href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">YouTube</a>
+                <a href="http://linkedin.com/in/danashafer">LinkedIn</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+</body>
 
 </html>
