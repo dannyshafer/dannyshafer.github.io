@@ -164,19 +164,27 @@
         items.forEach(function (el) { io.observe(el); });
     }
 
-    /* ---------- bitcoin tile (fails silently) ---------- */
-    var hgt = document.querySelector("[data-btc-height]");
-    var px = document.querySelector("[data-btc-price]");
-    if (hgt && "fetch" in window) {
-        fetch("https://mempool.space/api/blocks/tip/height").then(function (r) { return r.text(); }).then(function (t) {
-            var n = parseInt(t, 10);
-            if (n > 0) hgt.textContent = n.toLocaleString("en-US");
+    /* ---------- github tile (fails silently) ---------- */
+    var ghTotal = document.querySelector("[data-gh-total]");
+    var ghHeat = document.querySelector("[data-gh-heat]");
+    if (ghHeat && "fetch" in window) {
+        fetch("https://github-contributions-api.jogruber.de/v4/dannyshafer?y=last").then(function (r) { return r.json(); }).then(function (j) {
+            var days = (j && j.contributions) || [];
+            if (!days.length) return;
+            if (ghTotal && j.total && j.total.lastYear != null) ghTotal.textContent = Number(j.total.lastYear).toLocaleString("en-US");
+            /* pad to a Sunday so the grid columns are calendar weeks */
+            var pad = new Date(days[0].date + "T00:00:00").getDay();
+            var frag = document.createDocumentFragment();
+            for (var e = 0; e < pad; e++) { var blank = document.createElement("i"); blank.style.visibility = "hidden"; frag.appendChild(blank); }
+            days.forEach(function (d) {
+                var cell = document.createElement("i");
+                cell.className = "l" + d.level;
+                cell.title = d.date + ": " + d.count + (d.count === 1 ? " contribution" : " contributions");
+                frag.appendChild(cell);
+            });
+            ghHeat.appendChild(frag);
+            ghHeat.classList.add("ready");
         }).catch(function () {});
-        if (px) {
-            fetch("https://mempool.space/api/v1/prices").then(function (r) { return r.json(); }).then(function (j) {
-                if (j && j.USD) px.textContent = "$" + Math.round(j.USD).toLocaleString("en-US") + " per coin";
-            }).catch(function () {});
-        }
     }
 
     /* ---------- constellation field ---------- */

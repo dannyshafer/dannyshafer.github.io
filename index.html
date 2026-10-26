@@ -8,11 +8,12 @@
     <meta name="theme-color" content="#0a0a0d">
     <title>Daniel Shafer</title>
 
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-    <link rel="stylesheet" href="css/site.css?v=4">
+    <link rel="stylesheet" href="css/site.css?v=5">
 </head>
 
 <body>
@@ -63,8 +64,8 @@
 
         <div class="marquee" aria-hidden="true">
             <div class="track">
-                <span>Building <em>Vesper</em></span><span>Lending through <em>Chiron Capital</em></span><span>Giving through the <em>Shaight Foundation</em></span><span>Teaching on <em>Arachne Tutorials</em></span><span>Holding <em>Bitcoin</em></span>
-                <span>Building <em>Vesper</em></span><span>Lending through <em>Chiron Capital</em></span><span>Giving through the <em>Shaight Foundation</em></span><span>Teaching on <em>Arachne Tutorials</em></span><span>Holding <em>Bitcoin</em></span>
+                <span>Building <em>Vesper</em></span><span>Lending through <em>Chiron Capital</em></span><span>Giving through the <em>Shaight Foundation</em></span><span>Teaching on <em>Arachne Tutorials</em></span><span>Contributing to <em>open source</em></span><span>Holding <em>Bitcoin</em></span>
+                <span>Building <em>Vesper</em></span><span>Lending through <em>Chiron Capital</em></span><span>Giving through the <em>Shaight Foundation</em></span><span>Teaching on <em>Arachne Tutorials</em></span><span>Contributing to <em>open source</em></span><span>Holding <em>Bitcoin</em></span>
             </div>
         </div>
 
@@ -184,12 +185,12 @@
                             improve peoples' lives. I love working on teams, parsing problems, and learning.
                         </p>
                     </div>
-                    <div class="tile btc s-5 reveal" data-d="1">
-                        <span class="k">Bitcoin, live</span>
-                        <div class="big">Block <span data-btc-height>&hellip;</span></div>
-                        <div class="sub" data-btc-price>Tick tock, next block.</div>
-                        <span class="sym" aria-hidden="true">&#8383;</span>
-                    </div>
+                    <a class="tile gh s-5 reveal" data-d="1" href="https://github.com/dannyshafer">
+                        <span class="go">&#8599;</span>
+                        <span class="k">GitHub, last twelve months</span>
+                        <div class="big"><span data-gh-total>&hellip;</span><small> contributions</small></div>
+                        <div class="heat" data-gh-heat aria-label="Contribution graph"></div>
+                    </a>
                     <div class="tile s-5 reveal" data-d="2">
                         <span class="k">Stack</span>
                         <div class="chips">
@@ -198,7 +199,18 @@
                             <span class="chip">Python</span><span class="chip">Django</span><span class="chip">HTML / CSS</span>
                         </div>
                     </div>
-                    <div class="tile s-6 reveal" data-d="1">
+                    <a class="tile s-4 reveal" data-d="1" href="https://github.com/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged+-user%3Adannyshafer">
+                        <span class="go">&#8599;</span>
+                        <span class="k">Open source</span>
+                        <h3>Merged upstream</h3>
+                        <p>Fixes and features landed in projects I use:</p>
+                        <div class="chips">
+                            <span class="chip">typeshed</span><span class="chip">Ecto</span><span class="chip">Atuin</span>
+                            <span class="chip">Litestar</span><span class="chip">nats.go</span><span class="chip">templ</span>
+                            <span class="chip">minijinja</span><span class="chip">indicatif</span><span class="chip">Huma</span><span class="chip">h3</span>
+                        </div>
+                    </a>
+                    <div class="tile s-4 reveal" data-d="2">
                         <span class="k">Currently</span>
                         <ul class="now">
                             <li>Running <a href="https://lastvesper.com">Vesper</a>, a rule-based options trading system</li>
@@ -206,7 +218,7 @@
                             <li>Stacking sats and watching the blocks go by</li>
                         </ul>
                     </div>
-                    <a class="tile s-6 reveal" data-d="2" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">
+                    <a class="tile s-4 reveal" data-d="3" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">
                         <span class="go">&#8599;</span>
                         <span class="k">YouTube</span>
                         <h3>Arachne Tutorials</h3>
