@@ -171,7 +171,11 @@
         fetch("https://github-contributions-api.jogruber.de/v4/dannyshafer?y=last").then(function (r) { return r.json(); }).then(function (j) {
             var days = (j && j.contributions) || [];
             if (!days.length) return;
-            if (ghTotal && j.total && j.total.lastYear != null) ghTotal.textContent = Number(j.total.lastYear).toLocaleString("en-US");
+            if (ghTotal && j.total && j.total.lastYear != null) {
+                ghTotal.textContent = Number(j.total.lastYear).toLocaleString("en-US");
+                document.querySelector("[data-gh-big]").hidden = false;
+                document.querySelectorAll("[data-gh-fallback]").forEach(function (el) { el.hidden = true; });
+            }
             /* pad to a Sunday so the grid columns are calendar weeks */
             var pad = new Date(days[0].date + "T00:00:00").getDay();
             var frag = document.createDocumentFragment();
