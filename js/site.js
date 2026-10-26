@@ -23,6 +23,9 @@
 
     /* ---------- year + clock ---------- */
     document.querySelectorAll("#year").forEach(function (y) { y.textContent = new Date().getFullYear(); });
+    document.querySelectorAll("[data-years-since]").forEach(function (el) {
+        el.textContent = new Date().getFullYear() - parseInt(el.getAttribute("data-years-since"), 10);
+    });
     var clock = document.querySelector(".clock");
     if (clock) {
         var tick = function () {
