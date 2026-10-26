@@ -675,3 +675,6 @@ footer .mono { font-family: var(--mono); font-size: 0.76rem; }
 .tile.contact h3 em { color: var(--amber); }
 .page-title { font-size: clamp(3rem, 9vw, 7rem); max-width: none; }
 .bento.stats { margin-bottom: 48px; }
+.chip[href] { text-decoration: none; }
+.tile .more { margin-top: 16px; font-size: 0.85rem; }
+.tile .more a { color: var(--ink); text-decoration-color: var(--amber); text-underline-offset: 4px; }

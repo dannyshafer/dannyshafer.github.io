@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-    <link rel="stylesheet" href="css/site.css?v=6">
+    <link rel="stylesheet" href="css/site.css?v=7">
 </head>
 
 <body>
@@ -125,17 +125,24 @@
                             <span class="chip">Python</span><span class="chip">Django</span><span class="chip">HTML / CSS</span>
                         </div>
                     </div>
-                    <a class="tile s-4 reveal" data-d="1" href="https://github.com/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged+-user%3Adannyshafer" target="_blank" rel="noopener">
-                        <span class="go">&#8599;</span>
+                    <div class="tile s-4 reveal" data-d="1">
                         <span class="k">Open source</span>
                         <h3>Merged upstream</h3>
-                        <p>Fixes and features landed in projects I use:</p>
+                        <p>Fixes and features landed in projects I use. Each chip is the pull request.</p>
                         <div class="chips">
-                            <span class="chip">typeshed</span><span class="chip">Ecto</span><span class="chip">Atuin</span>
-                            <span class="chip">Litestar</span><span class="chip">nats.go</span><span class="chip">templ</span>
-                            <span class="chip">minijinja</span><span class="chip">indicatif</span><span class="chip">Huma</span><span class="chip">h3</span>
+                            <a class="chip" href="https://github.com/python/typeshed/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged" target="_blank" rel="noopener" title="Five merged PRs: networkx and subprocess stubs">typeshed</a>
+                            <a class="chip" href="https://github.com/elixir-ecto/ecto/pull/4801" target="_blank" rel="noopener" title="Keep interpolated true filters that a later or_where depends on">Ecto</a>
+                            <a class="chip" href="https://github.com/atuinsh/atuin/pull/4414" target="_blank" rel="noopener" title="pty-proxy: don't re-exec shells running commands from a string or file">Atuin</a>
+                            <a class="chip" href="https://github.com/litestar-org/litestar/pull/5104" target="_blank" rel="noopener" title="tools: annotate _pr_number_from_commit as returning int | None">Litestar</a>
+                            <a class="chip" href="https://github.com/nats-io/nats.go/pull/2177" target="_blank" rel="noopener" title="Add the default port to the host of server URLs with a path">nats.go</a>
+                            <a class="chip" href="https://github.com/a-h/templ/pull/1459" target="_blank" rel="noopener" title="Separate the templ version comment from the package clause">templ</a>
+                            <a class="chip" href="https://github.com/mitsuhiko/minijinja/pull/965" target="_blank" rel="noopener" title="docs: fix inverted sort filter examples">minijinja</a>
+                            <a class="chip" href="https://github.com/console-rs/indicatif/pull/846" target="_blank" rel="noopener" title="Add ProgressBar::inc_no_draw()">indicatif</a>
+                            <a class="chip" href="https://github.com/danielgtaylor/huma/pull/1128" target="_blank" rel="noopener" title="negotiation: don't panic on an empty q param">Huma</a>
+                            <a class="chip" href="https://github.com/h3js/h3/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged" target="_blank" rel="noopener" title="Two merged PRs: session typing and the legacy seal fallback">h3</a>
                         </div>
-                    </a>
+                        <p class="more"><a href="https://github.com/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged+-user%3Adannyshafer" target="_blank" rel="noopener">All merged pull requests &#8599;</a></p>
+                    </div>
                     <div class="tile s-4 reveal" data-d="2">
                         <span class="k">Currently</span>
                         <ul class="now">
@@ -272,7 +279,7 @@
         </div>
     </footer>
 
-    <script src="js/site.js?v=6"></script>
+    <script src="js/site.js?v=7"></script>
 </body>
 
 </html>
