@@ -369,7 +369,7 @@ section { padding: clamp(64px, 9vw, 120px) 0; }
     gap: 24px;
     margin-bottom: 36px;
 }
-h2.title {
+h2.title, h1.title {
     font-family: var(--display);
     font-variation-settings: "opsz" 96, "wght" 400, "SOFT" 40, "WONK" 1;
     font-size: clamp(2rem, 5vw, 3.6rem);
@@ -378,7 +378,7 @@ h2.title {
     max-width: 20ch;
     margin-top: 14px;
 }
-h2.title em { font-style: italic; color: var(--amber); }
+h2.title em, h1.title em { font-style: italic; color: var(--amber); }
 .sec-head .idx {
     font-family: var(--mono);
     font-size: 0.8rem;
@@ -668,3 +668,10 @@ footer .mono { font-family: var(--mono); font-size: 0.76rem; }
 .tile.vesper .facts span { display: block; margin-top: 8px; font-size: 0.9rem; line-height: 1.4; color: var(--ink-2); }
 .tile.vesper .chips { margin-top: 0; padding-top: 18px; }
 @media (max-width: 720px) { .tile.vesper .facts { grid-template-columns: 1fr; } }
+
+/* a11y + sub-pages */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.idx.corner { position: absolute; top: 24px; right: 24px; font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+.tile.contact h3 em { color: var(--amber); }
+.page-title { font-size: clamp(3rem, 9vw, 7rem); max-width: none; }
+.bento.stats { margin-bottom: 48px; }

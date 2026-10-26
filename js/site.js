@@ -12,11 +12,17 @@
         if (saved) root.setAttribute("data-theme", saved);
         else if (window.matchMedia("(prefers-color-scheme: light)").matches) root.setAttribute("data-theme", "light");
     } catch (e) {}
+    var themeMeta = document.querySelector('meta[name="theme-color"]');
+    var syncThemeColor = function () {
+        if (themeMeta) themeMeta.setAttribute("content", root.getAttribute("data-theme") === "light" ? "#f6f2ea" : "#0a0a0d");
+    };
+    syncThemeColor();
     var toggle = document.querySelector(".theme");
     if (toggle) {
         toggle.addEventListener("click", function () {
             var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
             root.setAttribute("data-theme", next);
+            syncThemeColor();
             try { localStorage.setItem("theme", next); } catch (e) {}
         });
     }
@@ -99,9 +105,10 @@
     /* ---------- name: split letters, variable-font ripple ---------- */
     var name = document.querySelector(".name");
     if (name) {
+        name.setAttribute("aria-label", name.textContent.trim());
         var words = name.textContent.trim().split(/\s+/);
         name.innerHTML = words.map(function (w) {
-            return '<span class="w">' + w.split("").map(function (c) { return '<span class="c">' + c + "</span>"; }).join("") + "</span>";
+            return '<span class="w" aria-hidden="true">' + w.split("").map(function (c) { return '<span class="c">' + c + "</span>"; }).join("") + "</span>";
         }).join(" ");
         var chars = name.querySelectorAll(".c");
         if (fine && !reduce) {

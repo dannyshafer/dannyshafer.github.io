@@ -4,16 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Shafer: software engineer, investor, and Bitcoin believer in the San Francisco Bay Area.">
+    <meta name="description" content="Software engineer, investor, and Bitcoin believer in San Francisco. Builder of Vesper, teacher on Arachne Tutorials.">
     <meta name="theme-color" content="#0a0a0d">
     <title>Daniel Shafer</title>
+    <link rel="canonical" href="https://da.nielshafer.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Daniel Shafer">
+    <meta property="og:description" content="Software engineer, investor, and Bitcoin believer in San Francisco. Builder of Vesper, teacher on Arachne Tutorials.">
+    <meta property="og:url" content="https://da.nielshafer.com/">
+    <meta property="og:image" content="https://da.nielshafer.com/img/common/daniel.png">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Daniel Shafer","url":"https://da.nielshafer.com/",
+     "jobTitle":"Software Engineer","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA"},
+     "sameAs":["https://github.com/dannyshafer","https://www.linkedin.com/in/danashafer","https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ"]}
+    </script>
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-    <link rel="stylesheet" href="css/site.css?v=5">
+    <link rel="stylesheet" href="css/site.css?v=6">
 </head>
 
 <body>
@@ -46,8 +58,9 @@
             <span class="eyebrow">Hello, I'm</span>
             <h1 class="name">Daniel Shafer</h1>
             <div class="roles">
-                <span class="article">a</span>
-                <span class="role" data-roles="software engineer|investor|YouTube creator|bitcoiner">software engineer</span>
+                <span class="sr-only">a software engineer, investor, YouTube creator, and bitcoiner</span>
+                <span class="article" aria-hidden="true">a</span>
+                <span class="role" aria-hidden="true" data-roles="software engineer|investor|YouTube creator|bitcoiner">software engineer</span>
             </div>
             <p class="lede">
                 I write software, teach it on <strong>YouTube</strong>, and put capital to work for
@@ -55,9 +68,9 @@
                 <strong>Shaight Foundation</strong>. Based in San Francisco.
             </p>
             <div class="cta">
-                <a class="btn primary" href="http://linkedin.com/in/danashafer"><span>Get in touch</span><span class="arrow">&#8599;</span></a>
-                <a class="btn" href="http://github.com/dannyshafer"><span>GitHub</span></a>
-                <a class="btn" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ"><span>YouTube</span></a>
+                <a class="btn primary" href="https://www.linkedin.com/in/danashafer" target="_blank" rel="noopener"><span>Get in touch</span><span class="arrow">&#8599;</span></a>
+                <a class="btn" href="https://github.com/dannyshafer" target="_blank" rel="noopener"><span>GitHub</span></a>
+                <a class="btn" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ" target="_blank" rel="noopener"><span>YouTube</span></a>
             </div>
             <span class="hint"><i></i> Scroll</span>
         </div>
@@ -79,7 +92,7 @@
                     <span class="idx">01 / 03</span>
                 </div>
                 <div class="bento">
-                    <a class="tile vesper s-7 r-2 reveal" href="https://lastvesper.com">
+                    <a class="tile vesper s-7 r-2 reveal" href="https://lastvesper.com" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
                         <span class="k">Trading system, live since 2026</span>
                         <h3>A trading system that sells options premium by rule, not by feel.</h3>
@@ -106,20 +119,20 @@
                             <span class="chip">Postgres</span><span class="chip">Robinhood API</span><span class="chip">Polymarket</span>
                         </div>
                     </a>
-                    <a class="tile proj s-5 reveal" data-d="1" href="https://github.com/dannyshafer/Chrysalis-App2.0">
+                    <a class="tile proj s-5 reveal" data-d="1" href="https://github.com/dannyshafer/Chrysalis-App2.0" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
-                        <div class="shot"><img src="img/common/chrysalis.png" alt="Chrysalis app"></div>
+                        <div class="shot"><img loading="lazy" src="img/common/chrysalis.png" alt="Chrysalis app"></div>
                         <div class="body">
                             <span class="k">Web app</span>
                             <h3>Chrysalis</h3>
                             <p>Makes it easy to get started with stocks by automating the math behind investment analysis.</p>
                         </div>
                     </a>
-                    <a class="tile proj s-5 reveal" data-d="2" href="http://shift.org">
+                    <a class="tile proj s-5 reveal" data-d="2" href="https://web.archive.org/web/2019/https://shift.org/" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
-                        <div class="shot"><img src="img/common/shift.png" alt="Shift.org"></div>
+                        <div class="shot"><img loading="lazy" src="img/common/shift.png" alt="Shift.org"></div>
                         <div class="body">
-                            <span class="k">Website</span>
+                            <span class="k">Website, archived</span>
                             <h3>Shift.org</h3>
                             <p>Connecting veterans and companies for meaningful post-military careers.</p>
                         </div>
@@ -136,18 +149,18 @@
                         <div class="big">0%<small> interest</small></div>
                         <p>The Shaight Foundation: a charitable revolving fund for people in need.</p>
                     </a>
-                    <a class="tile proj s-6 reveal" data-d="1" href="http://stevensonloftssf.com">
+                    <a class="tile proj s-6 reveal" data-d="1" href="https://web.archive.org/web/2019/http://stevensonloftssf.com/" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
-                        <div class="shot"><img src="img/common/stevenson.png" alt="Stevenson Lofts"></div>
+                        <div class="shot"><img loading="lazy" src="img/common/stevenson.png" alt="Stevenson Lofts"></div>
                         <div class="body">
-                            <span class="k">Website</span>
+                            <span class="k">Website, archived</span>
                             <h3>Stevenson Lofts</h3>
                             <p>Corporate site for a San Francisco loft building.</p>
                         </div>
                     </a>
-                    <a class="tile proj s-6 reveal" data-d="2" href="http://sovereignscapital.com">
+                    <a class="tile proj s-6 reveal" data-d="2" href="https://sovereignscapital.com" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
-                        <div class="shot"><img src="img/common/sovereigns.png" alt="Sovereign's Capital"></div>
+                        <div class="shot"><img loading="lazy" src="img/common/sovereigns.png" alt="Sovereign's Capital"></div>
                         <div class="body">
                             <span class="k">Website</span>
                             <h3>Sovereign's Capital</h3>
@@ -176,7 +189,7 @@
                         </p>
                         <p>
                             I create and post coding lessons on front-end and back-end topics to the
-                            <a href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">Arachne Tutorials</a>
+                            <a href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ" target="_blank" rel="noopener">Arachne Tutorials</a>
                             YouTube channel and invest with <a href="/chiron">Chiron Capital</a>.
                         </p>
                         <p>
@@ -185,7 +198,7 @@
                             improve peoples' lives. I love working on teams, parsing problems, and learning.
                         </p>
                     </div>
-                    <a class="tile gh s-5 reveal" data-d="1" href="https://github.com/dannyshafer">
+                    <a class="tile gh s-5 reveal" data-d="1" href="https://github.com/dannyshafer" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
                         <span class="k">GitHub, last twelve months</span>
                         <div class="big" data-gh-big hidden><span data-gh-total></span><small> contributions</small></div>
@@ -201,7 +214,7 @@
                             <span class="chip">Python</span><span class="chip">Django</span><span class="chip">HTML / CSS</span>
                         </div>
                     </div>
-                    <a class="tile s-4 reveal" data-d="1" href="https://github.com/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged+-user%3Adannyshafer">
+                    <a class="tile s-4 reveal" data-d="1" href="https://github.com/pulls?q=is%3Apr+author%3Adannyshafer+is%3Amerged+-user%3Adannyshafer" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
                         <span class="k">Open source</span>
                         <h3>Merged upstream</h3>
@@ -215,12 +228,12 @@
                     <div class="tile s-4 reveal" data-d="2">
                         <span class="k">Currently</span>
                         <ul class="now">
-                            <li>Running <a href="https://lastvesper.com">Vesper</a>, a rule-based options trading system</li>
+                            <li>Running <a href="https://lastvesper.com" target="_blank" rel="noopener">Vesper</a>, a rule-based options trading system</li>
                             <li>Recording new lessons for Arachne Tutorials</li>
                             <li>Stacking sats and watching the blocks go by</li>
                         </ul>
                     </div>
-                    <a class="tile s-4 reveal" data-d="3" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">
+                    <a class="tile s-4 reveal" data-d="3" href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ" target="_blank" rel="noopener">
                         <span class="go">&#8599;</span>
                         <span class="k">YouTube</span>
                         <h3>Arachne Tutorials</h3>
@@ -234,12 +247,12 @@
             <div class="wrap">
                 <div class="bento">
                     <div class="tile contact s-12 reveal">
-                        <span class="idx" style="position:absolute;top:24px;right:24px;font-family:var(--mono);font-size:.8rem;color:var(--muted)">03 / 03</span>
+                        <span class="idx corner">03 / 03</span>
                         <span class="k">Want to connect?</span>
-                        <h3>Let's build something <em style="color:var(--amber)">good</em> together.</h3>
+                        <h3>Let's build something <em>good</em> together.</h3>
                         <div class="cta">
-                            <a class="btn primary" href="http://linkedin.com/in/danashafer"><span>Say hello on LinkedIn</span><span class="arrow">&#8599;</span></a>
-                            <a class="btn" href="http://github.com/dannyshafer"><span>See the code</span></a>
+                            <a class="btn primary" href="https://www.linkedin.com/in/danashafer" target="_blank" rel="noopener"><span>Say hello on LinkedIn</span><span class="arrow">&#8599;</span></a>
+                            <a class="btn" href="https://github.com/dannyshafer" target="_blank" rel="noopener"><span>See the code</span></a>
                         </div>
                     </div>
                 </div>
@@ -252,14 +265,14 @@
             <span>Copyright Daniel Shafer <span id="year">2026</span></span>
             <span class="mono">Made in San Francisco. Always in beta.</span>
             <span class="links">
-                <a href="http://github.com/dannyshafer">GitHub</a>
-                <a href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ">YouTube</a>
-                <a href="http://linkedin.com/in/danashafer">LinkedIn</a>
+                <a href="https://github.com/dannyshafer" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.youtube.com/channel/UCNyKT62Rczocajwku3uPWbQ" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.linkedin.com/in/danashafer" target="_blank" rel="noopener">LinkedIn</a>
             </span>
         </div>
     </footer>
 
-    <script src="js/site.js?v=5"></script>
+    <script src="js/site.js?v=6"></script>
 </body>
 
 </html>
