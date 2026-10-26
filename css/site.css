@@ -580,14 +580,14 @@ h2.title em { font-style: italic; color: var(--amber); }
 /* now tile list */
 .now { list-style: none; margin-top: 14px; }
 .now li {
-    display: flex;
-    gap: 12px;
-    padding: 10px 0;
+    position: relative;
+    padding: 10px 0 10px 28px;
     border-top: 1px solid var(--line);
     font-size: 0.95rem;
     color: var(--ink-2);
 }
-.now li::before { content: "\2192"; color: var(--amber); }
+.now li::before { content: "\2192"; color: var(--amber); position: absolute; left: 0; top: 10px; }
+.now li a { color: var(--ink); text-decoration-color: var(--amber); text-underline-offset: 4px; }
 
 /* contact tile */
 .tile.contact { align-items: flex-start; justify-content: flex-end; min-height: 260px; }
