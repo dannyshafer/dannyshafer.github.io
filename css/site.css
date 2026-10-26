@@ -634,3 +634,35 @@ footer .mono { font-family: var(--mono); font-size: 0.76rem; }
     .reveal { opacity: 1; transform: none; }
     #field { display: none; }
 }
+
+/* vesper tile */
+.tile.vesper {
+    padding: 28px;
+    background: linear-gradient(160deg, rgba(247, 147, 26, 0.12), var(--card) 55%);
+}
+.tile.vesper h3 {
+    font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    font-variation-settings: "opsz" 72, "wght" 500, "SOFT" 60, "WONK" 1;
+    margin-top: 16px;
+    max-width: 22ch;
+}
+.tile.vesper p { font-size: 1rem; color: var(--ink-2); margin-top: 14px; max-width: 58ch; }
+.tile.vesper .chips { margin-top: auto; padding-top: 20px; }
+.tile.vesper .k { margin-bottom: 0; }
+.tile.vesper .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: auto;
+    padding-top: 28px;
+}
+.tile.vesper .facts div {
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--card) 40%, transparent);
+    border: 1px solid var(--line);
+}
+.tile.vesper .facts b { display: block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); font-weight: 500; }
+.tile.vesper .facts span { display: block; margin-top: 8px; font-size: 0.9rem; line-height: 1.4; color: var(--ink-2); }
+.tile.vesper .chips { margin-top: 0; padding-top: 18px; }
+@media (max-width: 720px) { .tile.vesper .facts { grid-template-columns: 1fr; } }
