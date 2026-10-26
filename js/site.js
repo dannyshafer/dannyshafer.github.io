@@ -123,7 +123,13 @@
     if (role) {
         var list = (role.getAttribute("data-roles") || "").split("|").filter(Boolean);
         var i = 0, glyphs = "abcdefghijklmnopqrstuvwxyz0123456789";
+        var article = document.querySelector(".article");
+        var setArticle = function (word) {
+            if (article) article.textContent = /^[aeiou]/i.test(word) ? "an" : "a";
+        };
+        setArticle(role.textContent);
         var scramble = function (to, done) {
+            setArticle(to);
             var from = role.textContent, frame = 0, len = Math.max(from.length, to.length);
             var step = function () {
                 var out = "";
