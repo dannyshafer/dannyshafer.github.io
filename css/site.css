@@ -355,8 +355,8 @@ body.is-hovering .cursor-ring { width: 64px; height: 64px; opacity: 0.9; }
     color: var(--ink-2);
 }
 .marquee:hover .track { animation-play-state: paused; }
-.track span { display: inline-flex; align-items: center; gap: 48px; }
-.track span::after { content: "\2726"; color: var(--amber); font-size: 0.8em; }
+.track span { display: inline-block; white-space: nowrap; }
+.track span::after { content: "\2726"; color: var(--amber); font-size: 0.8em; margin-left: 48px; vertical-align: middle; }
 .track em { font-style: italic; color: var(--amber); }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
